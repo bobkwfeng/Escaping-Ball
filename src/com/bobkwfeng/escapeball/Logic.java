@@ -1,3 +1,4 @@
+package com.bobkwfeng.escapeball;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
@@ -16,7 +17,7 @@ import javafx.util.Duration;
  * 
  */
 
-public class Tantiao extends Pane {
+public class Logic extends Pane {
     // The radius of all Ball
     public final double radius = 20;
     private double x = radius, y = radius;
@@ -39,7 +40,7 @@ public class Tantiao extends Pane {
     Text showscore = new Text("Score: ");
     TextField score = new TextField();
     
-    public Tantiao()
+    public Logic()
     { 
         
         start.setLayoutX(600);
@@ -76,7 +77,7 @@ public class Tantiao extends Pane {
                 new KeyFrame(Duration.millis(150), e -> moveBall()));
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.setRate(100);
-        // 初始化speed
+        // Initialize speed
         speed = animation.getRate();
     }
 

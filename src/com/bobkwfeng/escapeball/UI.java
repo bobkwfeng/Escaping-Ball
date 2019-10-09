@@ -1,3 +1,4 @@
+package com.bobkwfeng.escapeball;
 import javafx.scene.text.*;
 import javafx.scene.layout.Pane;
 
@@ -7,7 +8,7 @@ import javafx.scene.layout.Pane;
  * 
  */
 
-public class Jiemain extends Pane
+public class UI extends Pane
 {
 	public void chushi() 
 	{

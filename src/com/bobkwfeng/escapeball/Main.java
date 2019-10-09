@@ -1,3 +1,4 @@
+package com.bobkwfeng.escapeball;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
@@ -9,9 +10,9 @@ import javafx.stage.Stage;
  * 
  */
 
-public class Test extends Application {
+public class Main extends Application {
     public void start(Stage primaryStage) {
-        Tantiao ballPane = new Tantiao(); // Create a ball pane
+        Logic ballPane = new Logic(); // Create a ball pane
         ballPane.requestFocus();
 
         // Accelerate or decrease speed
@@ -23,7 +24,7 @@ public class Test extends Application {
             }
         });
         // Initialize
-        Jiemain start = new Jiemain();
+        UI start = new UI();
         start.chushi();
         Scene scene = new Scene(start, 1000, 562);
         // Add scene to stage
